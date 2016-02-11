@@ -8,9 +8,9 @@ namespace CECS475_lab03
 {
    class StockBroker
    {
-      public string Name { get; private set; }
+      public static string Name { get; private set; }
 
-      public List<Stock> StockList {get; set;}
+      public static List<Stock> StockList {get; set;}
 
       public StockBroker( string name )
       {
@@ -20,7 +20,14 @@ namespace CECS475_lab03
 
       public void AddStock(Stock s)
       {
-         StockList.Add(new Stock(s.Name, s.InitialValue, s.MaxChange, s.Notification) { });
+         StockList.Add(s);
+            s.StockEvent += MyEventHandler;
       }
+
+        static void MyEventHandler(Object sender, EventData e)
+        {
+            Console.WriteLine(Name.PadRight(10) + e.stockName.PadRight(10) + e.currentValue.ToString().PadRight(10) + e.numOfChange.ToString().PadRight(10));
+            //Environment.Exit(0);
+        }
    }
 }

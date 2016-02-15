@@ -8,8 +8,6 @@ namespace CECS475_lab03
 {
    class StockApplication
    {
-      public delegate void Events(object obj);
-
       static void Main(string[] args)
       {
          Stock stock1 = new Stock("Technology", 160, 5, 15);
@@ -35,9 +33,6 @@ namespace CECS475_lab03
          b4.AddStock(stock2);
          b4.AddStock(stock3);
          b4.AddStock(stock4);
-
-         Console.WriteLine("Press any key to continue...");
-         Console.ReadKey();
-      }
-   }
+      } // end Main
+   } // end class StockApplication
 }

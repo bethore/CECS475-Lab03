@@ -14,7 +14,7 @@ namespace CECS475_lab03
         private static Mutex mut = new Mutex();
 
         // The directory the text file is to be created
-        string path = @"C:\CECS475_Lab03.txt";
+        string path = @".\EventLog.txt";
 
         public string Name { get; private set; }
 

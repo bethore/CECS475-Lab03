@@ -77,12 +77,4 @@ namespace CECS475_lab03
             }
         } // end method Activate
     } // end class Stock
-
-    // Event data that hold values of Stock
-    public class EventData : EventArgs
-    {
-        public String stockName { get; set; }
-        public double currentValue { get; set; }
-        public int numOfChange { get; set; }
-    } // end class EventData
 }

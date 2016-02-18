@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/******************************************
+    George Rhee and Imanuel Kurniawan
+    CECS 475 - Section 03
+    Lab Assignment #3 - Stock Application
+    Due February 16, 2016
+    StockApplication.cs
+******************************************/
+
 
 namespace CECS475_lab03
 {
@@ -35,4 +38,4 @@ namespace CECS475_lab03
          b4.AddStock(stock4);
       } // end Main
    } // end class StockApplication
-}
+}//end namespace CECS475_lab03
